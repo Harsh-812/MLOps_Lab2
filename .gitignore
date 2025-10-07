@@ -1,0 +1,6 @@
+lab2_env/
+__pycache__/
+*.pyc
+model/*.pkl
+.env
+.DS_Store
