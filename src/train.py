@@ -6,10 +6,7 @@ from sklearn.metrics import accuracy_score
 from data import load_data, split_data
 
 def fit_model(X_train, y_train):
-    """
-    Train a small but solid pipeline on Wine:
-    StandardScaler -> RandomForestClassifier
-    """
+
     pipe = Pipeline(steps=[
         ("scaler", StandardScaler()),
         ("rf", RandomForestClassifier(n_estimators=200, random_state=42))
